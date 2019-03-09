@@ -6,6 +6,7 @@
 
 -- Your code here
 tabuleiro = require("tabuleiro")
+inteligencia = require("inteligencia")
 
 --Jogador
 jogador = "X"
@@ -35,6 +36,8 @@ function novoJogo()
             iniciar()
             createStateInitial()
             tabuleiro:pseutabuleiro()
+            inteligencia.ola()
+            
             return true
         end
     end
@@ -49,7 +52,7 @@ function jogadorVez()
     if (jogador == "X") then
    
         jogador = "O"
-        inteligencia()
+        funcInteligencia()
         
         jogador = "X"    
     end
@@ -217,7 +220,7 @@ function eventoBotao()
 end
 
 
-function inteligencia()
+function funcInteligencia()
     math.randomseed(os.time())
     
     
@@ -244,6 +247,7 @@ function createStateInitial()
     tabuleiro:realizarJogada(9, "O")
   
 end
+
 
 novoJogo()
 

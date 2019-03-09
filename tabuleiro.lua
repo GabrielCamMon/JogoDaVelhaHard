@@ -16,7 +16,7 @@ function tabuleiro:novotabuleiro()
 end
 
 function tabuleiro:pseutabuleiro()
-    local pseuTab = tabuleiro 
+    print(tabuleiro[1][1])
 
 end
 
