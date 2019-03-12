@@ -35,8 +35,8 @@ function novoJogo()
             mensagem = ""
             iniciar()
             createStateInitial()
-            tabuleiro:pseutabuleiro()
-            inteligencia.ola()
+         
+            inteligencia.QuaisSaoVazios()
             
             return true
         end
@@ -229,7 +229,8 @@ function funcInteligencia()
 
     while retorno == false do
     retorno = tabuleiro:realizarJogada(random, jogador)
-    print(retorno)    
+    
+    
     random = math.random(1, 9)
     end
      

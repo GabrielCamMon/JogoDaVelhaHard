@@ -15,10 +15,6 @@ function tabuleiro:novotabuleiro()
 	return nTabuleiro
 end
 
-function tabuleiro:pseutabuleiro()
-    print(tabuleiro[1][1])
-
-end
 
 
 --Verifica se todos elementos de uma linha, coluna e diagonas sao iguais.
